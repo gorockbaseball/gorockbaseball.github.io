@@ -1,0 +1,29 @@
+<head>
+  <!-- Google Analytics Tracking Code -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108430181-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108430181-1');
+  </script>
+</head>
+<body style="margin: 0px;">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <p style="font-size: 0.6em; font-family: sans-serif; color: white; position: fixed; margin: 0 auto; margin-left: 4px; top: 60px; opacity: 0.5; text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);">ADVERTISEMENT</p>
+  <iframe id="myiframe" width="300px" height="75px" frameborder="0" name="ADSPACE" scrolling="no" overflow="hidden" src=""></iframe>
+  <div id="bg" style="position: absolute; width: 300px; height: 75px; z-index: -999; top: 0; left: 0;"></div>
+
+<script>
+document.onLoad = newSite();
+
+function newSite() {
+    var sites = ['AD0000-10-05-2017/index-mobile.html',
+                 'AD0000-10-05-2017/index-mobile.html'
+                ]
+    
+    document.getElementById('myiframe').src = sites[Math.floor(Math.random() * sites.length)];
+}
+</script>
+</body>

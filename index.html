@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>RCHS Baseball Team</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Social Card Code -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ROCKBSBALL">
+  <meta name="twitter:title" content="RCHS Baseball - Website">
+  <meta name="twitter:description" content="Home of the Rockcastle County Rockets!">
+  <meta name="twitter:image" content="https://zfett.github.io/img/socialcard.jpg">
+
+  <meta property="og:url"                content="https://zfett.github.io/" />
+  <meta property="og:type"               content="article" />
+  <meta property="og:title"              content="RCHS Baseball - Website" />
+  <meta property="og:description"        content="Home of the Rockcastle County Rockets!" />
+  <meta property="og:image"              content="https://zfett.github.io/img/socialcard.jpg" />
+
+  <!-- OneSignal Code -->
+  <link rel="manifest" href="/manifest.json">
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+  <script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(["init", {
+    appId: "475f94a9-788c-4dde-a80d-d6a493e111cc",
+    autoRegister: true,
+    notifyButton: {
+      enable: true /* Set to false to hide */
+    }
+  }]);
+  </script>
+
+  <!-- Google Analytics Tracking Code -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108430181-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-108430181-1');
+  </script>
+
+</head>
+<body>
+
+  <div id="demo-content">
+    <div id="loader-wrapper">
+
+      <div id="loader"><img src="img/largeR.png" id="loader-img"/></div>
+
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+
+    </div>
+
+    <header>
+      <div id="header-cont">
+        <a href="https://zfett.github.io/index.html" id="header-link">HOME</a>
+        <a href="https://zfett.github.io/schedule.html" id="header-link">SCHEDULES</a>
+        <a href="https://zfett.github.io/roster.html" id="header-link">ROSTER</a>
+        <a href="https://zfett.github.io/press.html" id="header-link">PRESS</a>
+        <a href="https://zfett.github.io/videos.html" id="header-link">MEDIA</a>
+      </div>
+
+
+
+    </header>
+
+    <a href="#content-ad-sel"><div id="down-arrow"></div></a>
+
+    <svg id="hero-overlay" width="100vw" height="100vh" viewBox=""
+    xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <polygon points="0,0 450,0 0, 4000" style="fill:#d70014;" />
+  </svg>
+  <div id="hero-title-cont">
+    <h1 id="hero-title">Welcome to the official RCHS baseball website!</h1>
+  </div>
+  <div id="hero">
+  </div>
+
+  <a id="content-ad-sel"></a>
+  <div id="content-ad">
+    <iframe width="750px" height="100px" frameborder="0" name="ADSPACE" scrolling="no" overflow="hidden" src="ad/index.html"></iframe>
+  </div>
+
+  <div id="content-ad-mobile">
+    <iframe width="300px" height="75px" frameborder="0" name="ADSPACE" scrolling="no" overflow="hidden" src="ad/index-mobile.html"></iframe>
+  </div>
+
+  <div id="content">
+    <div class="column-right">
+      <h1>Recent Game Results:</h1>
+      <div class="game-results-cont">
+        <img src="img/winicon.png" class="game-results-icon" />
+        <p class="game-results-teams"><b>ROCKCASTLE</b> vs. <b>PULASKI</b></p>
+        <p class="game-results-date">01/04/2017</p>
+        <p class="game-results-finalscore"><b>15</b> to <b>1</b></p>
+      </div>
+
+      <div class="game-results-cont">
+        <img src="img/lossicon.png" class="game-results-icon" />
+        <p class="game-results-teams"><b>ROCKCASTLE</b> vs. <b>PULASKI</b></p>
+        <p class="game-results-date">01/04/2017</p>
+        <p class="game-results-finalscore"><b>1</b> to <b>15</b></p>
+      </div>
+    </div>
+    <div class="column-left">
+      <h1>Most Recent Tweet:</h1>
+      <a target="_blank" class="twitter-timeline" data-lang="en" data-dnt="true" data-theme="light" data-chrome="noheader nofooter noborders noscrollbar transparent" data-tweet-limit="1" data-link-color="#d70014" href="https://twitter.com/ROCKBSBALL">Tweets by ROCKBSBALL</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </div>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
