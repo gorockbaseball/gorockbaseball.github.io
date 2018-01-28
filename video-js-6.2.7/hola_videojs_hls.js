@@ -219,7 +219,7 @@ var AbrController = function (_EventHandler) {
       }
 
       // follow algorithm captured from stagefright :
-      // https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp
+      // http://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp
       // Pick the highest bandwidth stream below or equal to estimated bandwidth.
       for (i = 0; i <= maxAutoLevel; i++) {
         // consider only 80% of the available bandwidth, but if we are switching up,
@@ -313,7 +313,7 @@ var BufferController = function (_EventHandler) {
       // is greater than 100ms (this is enough to handle seek for VOD or level change for LIVE videos). At the time of change we issue
       // `SourceBuffer.abort()` and adjusting `SourceBuffer.timestampOffset` if `SourceBuffer.updating` is false or awaiting `updateend`
       // event if SB is in updating state.
-      // More info here: https://github.com/dailymotion/hls.js/issues/332#issuecomment-257986486
+      // More info here: http://github.com/dailymotion/hls.js/issues/332#issuecomment-257986486
 
       if (type === 'audio' && audioTrack && audioTrack.container === 'audio/mpeg') {
         // Chrome audio mp3 track
@@ -661,7 +661,7 @@ var BufferController = function (_EventHandler) {
       this.updateMediaElementDuration();
     }
 
-    // https://github.com/dailymotion/hls.js/issues/355
+    // http://github.com/dailymotion/hls.js/issues/355
 
   }, {
     key: 'updateMediaElementDuration',
@@ -3498,7 +3498,7 @@ var AES128Decrypter = function () {
      *
      * @see http://en.wikipedia.org/wiki/Advanced_Encryption_Standard
      * @see http://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_.28CBC.29
-     * @see https://tools.ietf.org/html/rfc2315
+     * @see http://tools.ietf.org/html/rfc2315
      */
 
   }, {
@@ -3984,7 +3984,7 @@ var ADTS = function () {
         config[1] |= (adtsExtensionSampleingIndex & 0x0E) >> 1;
         config[2] = (adtsExtensionSampleingIndex & 0x01) << 7;
         // adtsObjectType (force to 2, chrome is checking that object type is less than 5 ???
-        //    https://chromium.googlesource.com/chromium/src.git/+/master/media/formats/mp4/aac.cc
+        //    http://chromium.googlesource.com/chromium/src.git/+/master/media/formats/mp4/aac.cc
         config[2] |= 2 << 2;
         config[3] = 0;
       }
@@ -4200,7 +4200,7 @@ var DemuxerWorker = function DemuxerWorker(self) {
   });
 }; /* demuxer web worker.
     *  - listen to worker message, and trigger DemuxerInline upon reception of Fragments.
-    *  - provides MP4 Boxes back to main thread using [transferable objects](https://developers.google.com/web/updates/2011/12/Transferable-Objects-Lightning-Fast) in order to minimize message passing overhead.
+    *  - provides MP4 Boxes back to main thread using [transferable objects](http://developers.google.com/web/updates/2011/12/Transferable-Objects-Lightning-Fast) in order to minimize message passing overhead.
     */
 
 exports.default = DemuxerWorker;
@@ -7629,7 +7629,7 @@ var PlaylistLoader = function (_EventHandler) {
       var levels = [],
           result = void 0;
 
-      // https://regex101.com is your friend
+      // http://regex101.com is your friend
       var re = /#EXT-X-STREAM-INF:([^\n\r]*)[\r\n]+([^\r\n]+)/g;
       while ((result = re.exec(string)) != null) {
         var level = {};
@@ -7802,7 +7802,7 @@ var PlaylistLoader = function (_EventHandler) {
             }
             break;
           case 'KEY':
-            // https://tools.ietf.org/html/draft-pantos-http-live-streaming-08#section-3.4.4
+            // http://tools.ietf.org/html/draft-pantos-http-live-streaming-08#section-3.4.4
             var decryptparams = result[1];
             var keyAttrs = new _attrList2.default(decryptparams);
             var decryptmethod = keyAttrs.enumeratedString('METHOD'),
@@ -8843,7 +8843,7 @@ var MP4Remuxer = function () {
       if (outputSamples.length && navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
         var flags = outputSamples[0].flags;
         // chrome workaround, mark first sample as being a Random Access Point to avoid sourcebuffer append issue
-        // https://code.google.com/p/chromium/issues/detail?id=229412
+        // http://code.google.com/p/chromium/issues/detail?id=229412
         flags.dependsOn = 2;
         flags.isNonSync = 0;
       }
@@ -9340,7 +9340,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-// adapted from https://github.com/kanongil/node-m3u8parse/blob/master/attrlist.js
+// adapted from http://github.com/kanongil/node-m3u8parse/blob/master/attrlist.js
 var AttrList = function () {
   function AttrList(attrs) {
     _classCallCheck(this, AttrList);
@@ -9506,8 +9506,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 /**
  *
  * This code was ported from the dash.js project at:
- *   https://github.com/Dash-Industry-Forum/dash.js/blob/development/externals/cea608-parser.js
- *   https://github.com/Dash-Industry-Forum/dash.js/commit/8269b26a761e0853bb21d78780ed945144ecdd4d#diff-71bc295a2d6b6b7093a1d3290d53a4b2
+ *   http://github.com/Dash-Industry-Forum/dash.js/blob/development/externals/cea608-parser.js
+ *   http://github.com/Dash-Industry-Forum/dash.js/commit/8269b26a761e0853bb21d78780ed945144ecdd4d#diff-71bc295a2d6b6b7093a1d3290d53a4b2
  *
  * The original copyright appears below:
  *
@@ -11017,7 +11017,7 @@ var URLHelper = {
     if (!baseURLDomainSplit) {
       throw new Error('Error trying to parse base URL.');
     }
-    // e.g. 'http:', 'https:', ''
+    // e.g. 'http:', 'http:', ''
     var baseURLProtocol = baseURLDomainSplit[2] || '';
     // e.g. 'http://example.com', '//example.com', ''
     var baseURLProtocolDomain = baseURLDomainSplit[1] || '';
@@ -11046,7 +11046,7 @@ var URLHelper = {
   },
 
   // build an absolute path using the provided basePath
-  // adapted from https://developer.mozilla.org/en-US/docs/Web/API/document/cookie#Using_relative_URLs_in_the_path_parameter
+  // adapted from http://developer.mozilla.org/en-US/docs/Web/API/document/cookie#Using_relative_URLs_in_the_path_parameter
   // this does not handle the case where relativePath is "/" or "//". These cases should be handled outside this.
   buildAbsolutePath: function buildAbsolutePath(basePath, relativePath) {
     var sRelPath = relativePath;
@@ -11145,8 +11145,8 @@ var XhrLoader = function () {
       xhr.onprogress = this.loadprogress.bind(this);
 
       var url = this.url;
-      if (location.protocol === 'https:' && /^http:\/\//.test(url)) {
-        url = url.replace(/^http:\/\//, 'https://');
+      if (location.protocol === 'http:' && /^http:\/\//.test(url)) {
+        url = url.replace(/^http:\/\//, 'http://');
       }
       xhr.open('GET', url, true);
       if (this.byteRange) {
@@ -11481,7 +11481,7 @@ function HolaProviderHLS(source, tech){
         _errorCounts[data.type] ?
             _errorCounts[data.type] += 1 : _errorCounts[data.type] = 1;
         // implement simple error handling based on hls.js documentation
-        // (https://github.com/dailymotion/hls.js/blob/master/API.md#fifth-step-error-handling)
+        // (http://github.com/dailymotion/hls.js/blob/master/API.md#fifth-step-error-handling)
         if (data.fatal)
         {
             switch (data.type)

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
   <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <title>RCHS Baseball Team</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -12,17 +12,17 @@
   <meta name="twitter:site" content="@ROCKBSBALL">
   <meta name="twitter:title" content="RCHS Baseball - Website">
   <meta name="twitter:description" content="Home of the Rockcastle County Rockets!">
-  <meta name="twitter:image" content="https://zfett.github.io/img/socialcard.jpg">
+  <meta name="twitter:image" content="http://gorockbaseball.com/img/socialcard.jpg">
 
-  <meta property="og:url"                content="https://zfett.github.io/" />
+  <meta property="og:url"                content="http://gorockbaseball.com" />
   <meta property="og:type"               content="article" />
   <meta property="og:title"              content="RCHS Baseball - Website" />
   <meta property="og:description"        content="Home of the Rockcastle County Rockets!" />
-  <meta property="og:image"              content="https://zfett.github.io/img/socialcard.jpg" />
+  <meta property="og:image"              content="http://gorockbaseball.com/img/socialcard.jpg" />
 
   <!-- OneSignal Code -->
   <link rel="manifest" href="/manifest.json">
-  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+  <script src="http://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
   <script>
   var OneSignal = window.OneSignal || [];
   OneSignal.push(["init", {
@@ -35,7 +35,7 @@
   </script>
 
   <!-- Google Analytics Tracking Code -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108430181-1"></script>
+  <script async src="http://www.googletagmanager.com/gtag/js?id=UA-108430181-1"></script>
   <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -58,15 +58,30 @@
 
     <header>
       <div id="header-cont">
-        <a href="https://zfett.github.io/index.html" id="header-link">HOME</a>
-        <a href="https://zfett.github.io/schedule.html" id="header-link">SCHEDULES</a>
-        <a href="https://zfett.github.io/roster.html" id="header-link">ROSTER</a>
-        <a href="https://zfett.github.io/press.html" id="header-link">PRESS</a>
-        <a href="https://zfett.github.io/videos.html" id="header-link">MEDIA</a>
+        <a href="http://gorockbaseball.com/index.html" id="header-link">HOME</a>
+        <a href="http://gorockbaseball.com/schedule.html" id="header-link">SCHEDULE</a>
+        <a href="http://gorockbaseball.com/roster.html" id="header-link">ROSTER</a>
+        <a href="http://gorockbaseball.com/press.html" id="header-link">ABOUT</a>
+        <a href="http://gorockbaseball.com/videos.html" id="header-link">VIDEOS</a>
       </div>
 
+      <nav>
 
+    <input id="nav" type="checkbox" />
 
+    <label for="nav">
+      <b><i></i><i></i><i></i></b>
+    </label>
+
+    <menu>
+      <li><a href="http://gorockbaseball.com/index.html">HOME</a></li>
+      <li><a href="http://gorockbaseball.com/schedule.html">SCHEDULE</a></li>
+      <li><a href="http://gorockbaseball.com/roster.html">ROSTER</a></li>
+      <li><a href="http://gorockbaseball.com/press.html">ABOUT</a></li>
+      <li><a href="http://gorockbaseball.com/videos.html">VIDEOS</a></li>
+    </menu>
+
+  </nav>
     </header>
 
     <a href="#content-ad-sel"><div id="down-arrow"></div></a>
@@ -93,23 +108,19 @@
   <div id="content">
     <div class="column-right">
       <h1>Recent Game Results:</h1>
-      <div class="game-results-cont">
+      <p style="text-align: center; font-size: 0.85em; opacity: 0.5;">There have been no recent games yet.</p>
+
+      <!-- <div class="game-results-cont">
         <img src="img/winicon.png" class="game-results-icon" />
         <p class="game-results-teams"><b>ROCKCASTLE</b> vs. <b>PULASKI</b></p>
         <p class="game-results-date">01/04/2017</p>
         <p class="game-results-finalscore"><b>15</b> to <b>1</b></p>
-      </div>
+      </div> -->
 
-      <div class="game-results-cont">
-        <img src="img/lossicon.png" class="game-results-icon" />
-        <p class="game-results-teams"><b>ROCKCASTLE</b> vs. <b>PULASKI</b></p>
-        <p class="game-results-date">01/04/2017</p>
-        <p class="game-results-finalscore"><b>1</b> to <b>15</b></p>
-      </div>
     </div>
     <div class="column-left">
       <h1>Most Recent Tweet:</h1>
-      <a target="_blank" class="twitter-timeline" data-lang="en" data-dnt="true" data-theme="light" data-chrome="noheader nofooter noborders noscrollbar transparent" data-tweet-limit="1" data-link-color="#d70014" href="https://twitter.com/ROCKBSBALL">Tweets by ROCKBSBALL</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <a target="_blank" class="twitter-timeline" data-lang="en" data-dnt="true" data-theme="light" data-chrome="noheader nofooter noborders noscrollbar transparent" data-tweet-limit="1" data-link-color="#d70014" href="http://twitter.com/ROCKBSBALL">Tweets by ROCKBSBALL</a> <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
 

@@ -223,7 +223,7 @@ var
           // "ended" does not fire within 250ms. Note that the ended
           // event should occur whether the browser actually has data
           // available for that position
-          // (https://html.spec.whatwg.org/multipage/embedded-content.html#seeking),
+          // (http://html.spec.whatwg.org/multipage/embedded-content.html#seeking),
           // so it should not be necessary to wait for the seek to
           // indicate completion.
           player.ads.resumeEndedTimeout = window.setTimeout(function() {

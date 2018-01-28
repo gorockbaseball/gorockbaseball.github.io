@@ -71,7 +71,7 @@ class Overlay extends Component {
     // solved with Function.prototype.bind (but not videojs.bind because of
     // its GUID magic), but the anonymous function approach avoids any issues
     // caused by crappy libraries clobbering Function.prototype.bind.
-    // - https://github.com/videojs/video.js/issues/3097
+    // - http://github.com/videojs/video.js/issues/3097
     ['endListener_', 'rewindListener_', 'startListener_'].forEach(name => {
       this[name] = (e) => Overlay.prototype[name].call(this, e);
     });

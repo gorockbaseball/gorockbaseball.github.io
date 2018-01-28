@@ -1,13 +1,13 @@
 /**
  * @license
  * Video.js 6.2.7 <http://videojs.com/>
- * Copyright Brightcove, Inc. <https://www.brightcove.com/>
+ * Copyright Brightcove, Inc. <http://www.brightcove.com/>
  * Available under Apache License Version 2.0
- * <https://github.com/videojs/video.js/blob/master/LICENSE>
+ * <http://github.com/videojs/video.js/blob/master/LICENSE>
  *
- * Includes vtt.js <https://github.com/mozilla/vtt.js>
+ * Includes vtt.js <http://github.com/mozilla/vtt.js>
  * Available under Apache License Version 2.0
- * <https://github.com/mozilla/vtt.js/blob/master/LICENSE>
+ * <http://github.com/mozilla/vtt.js/blob/master/LICENSE>
  */
 
 import window from 'global/window';
@@ -590,7 +590,7 @@ var log$1 = log;
  * @param {string} prop
  *        The property name you want
  *
- * @see https://bugzilla.mozilla.org/show_bug.cgi?id=548397
+ * @see http://bugzilla.mozilla.org/show_bug.cgi?id=548397
  *
  * @static
  * @const
@@ -2213,7 +2213,7 @@ var throttle = function throttle(fn, wait) {
  * adds shorthand functions that wrap around lengthy functions. For example:
  * the `on` function is a wrapper around `addEventListener`.
  *
- * @see [EventTarget Spec]{@link https://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-EventTarget}
+ * @see [EventTarget Spec]{@link http://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-EventTarget}
  * @class EventTarget
  */
 var EventTarget = function EventTarget() {};
@@ -2222,7 +2222,7 @@ var EventTarget = function EventTarget() {};
  * A Custom DOM event.
  *
  * @typedef {Object} EventTarget~Event
- * @see [Properties]{@link https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent}
+ * @see [Properties]{@link http://developer.mozilla.org/en-US/docs/Web/API/CustomEvent}
  */
 
 /**
@@ -3564,7 +3564,7 @@ var Component = function () {
       }).filter(function (child) {
         // we have to make sure that child.name isn't in the techOrder since
         // techs are registerd as Components but can't aren't compatible
-        // See https://github.com/videojs/video.js/issues/2772
+        // See http://github.com/videojs/video.js/issues/2772
         var c = Component.getComponent(child.opts.componentClass || toTitleCase(child.name));
 
         return c && !Tech.isTech(c);
@@ -3666,7 +3666,7 @@ var Component = function () {
    * @return {Element|null}
    *         the dom element that was found, or null
    *
-   * @see [Information on CSS Selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors)
+   * @see [Information on CSS Selectors](http://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors)
    */
 
 
@@ -3690,7 +3690,7 @@ var Component = function () {
    * @return {NodeList}
    *         a list of dom elements that were found
    *
-   * @see [Information on CSS Selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors)
+   * @see [Information on CSS Selectors](http://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors)
    */
 
 
@@ -3812,7 +3812,7 @@ var Component = function () {
    *         - Most browsers will return null if the attibute does not exist or has
    *           no value.
    *
-   * @see [DOM API]{@link https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute}
+   * @see [DOM API]{@link http://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute}
    */
 
 
@@ -3829,7 +3829,7 @@ var Component = function () {
    * @param {string} value
    *        Value to set the attribute to.
    *
-   * @see [DOM API]{@link https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute}
+   * @see [DOM API]{@link http://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute}
    */
 
 
@@ -3843,7 +3843,7 @@ var Component = function () {
    * @param {string} attribute
    *        Name of the attribute to remove.
    *
-   * @see [DOM API]{@link https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttribute}
+   * @see [DOM API]{@link http://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttribute}
    */
 
 
@@ -4287,7 +4287,7 @@ var Component = function () {
    *         was set.
    *
    * @listens Component#dispose
-   * @see [Similar to]{@link https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setTimeout}
+   * @see [Similar to]{@link http://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setTimeout}
    */
 
 
@@ -4319,7 +4319,7 @@ var Component = function () {
    * @return {number}
    *         Returns the timeout id that was cleared.
    *
-   * @see [Similar to]{@link https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/clearTimeout}
+   * @see [Similar to]{@link http://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/clearTimeout}
    */
 
 
@@ -4353,7 +4353,7 @@ var Component = function () {
    *         {@link Component#clearInterval} to clear the interval.
    *
    * @listens Component#dispose
-   * @see [Similar to]{@link https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval}
+   * @see [Similar to]{@link http://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval}
    */
 
 
@@ -4386,7 +4386,7 @@ var Component = function () {
    * @return {number}
    *         Returns the interval id that was cleared.
    *
-   * @see [Similar to]{@link https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/clearInterval}
+   * @see [Similar to]{@link http://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/clearInterval}
    */
 
 
@@ -4425,7 +4425,7 @@ var Component = function () {
    *         the animation frame callback.
    *
    * @listens Component#dispose
-   * @see [Similar to]{@link https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame}
+   * @see [Similar to]{@link http://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame}
    */
 
 
@@ -4464,7 +4464,7 @@ var Component = function () {
    * @return {number}
    *         Returns the rAF ID that was cleared.
    *
-   * @see [Similar to]{@link https://developer.mozilla.org/en-US/docs/Web/API/window/cancelAnimationFrame}
+   * @see [Similar to]{@link http://developer.mozilla.org/en-US/docs/Web/API/window/cancelAnimationFrame}
    */
 
 
@@ -4636,7 +4636,7 @@ Component.registerComponent('Component', Component);
  * @property {time-ranges:indexFunction} end
  *           Returns the time offset at which a specified time range begins.
  *
- * @see https://developer.mozilla.org/en-US/docs/Web/API/TimeRanges
+ * @see http://developer.mozilla.org/en-US/docs/Web/API/TimeRanges
  */
 
 /**
@@ -4784,8 +4784,8 @@ function bufferedPercent(buffered, duration) {
  * Store the browser-specific methods for the fullscreen API.
  *
  * @type {Object}
- * @see [Specification]{@link https://fullscreen.spec.whatwg.org}
- * @see [Map Approach From Screenfull.js]{@link https://github.com/sindresorhus/screenfull.js}
+ * @see [Specification]{@link http://fullscreen.spec.whatwg.org}
+ * @see [Map Approach From Screenfull.js]{@link http://github.com/sindresorhus/screenfull.js}
  */
 var FullscreenApi = {};
 
@@ -4834,8 +4834,8 @@ if (browserApi) {
  *        - `MediaError` (video.js): will return itself if it's already a
  *          video.js `MediaError` object.
  *
- * @see [MediaError Spec]{@link https://dev.w3.org/html5/spec-author-view/video.html#mediaerror}
- * @see [Encrypted MediaError Spec]{@link https://www.w3.org/TR/2013/WD-encrypted-media-20130510/#error-codes}
+ * @see [MediaError Spec]{@link http://dev.w3.org/html5/spec-author-view/video.html#mediaerror}
+ * @see [Encrypted MediaError Spec]{@link http://www.w3.org/TR/2013/WD-encrypted-media-20130510/#error-codes}
  *
  * @class MediaError
  */
@@ -5812,7 +5812,7 @@ var disableOthers = function disableOthers(list, track) {
 /**
  * The current list of {@link AudioTrack} for a media file.
  *
- * @see [Spec]{@link https://html.spec.whatwg.org/multipage/embedded-content.html#audiotracklist}
+ * @see [Spec]{@link http://html.spec.whatwg.org/multipage/embedded-content.html#audiotracklist}
  * @extends TrackList
  */
 
@@ -5935,7 +5935,7 @@ var disableOthers$1 = function disableOthers(list, track) {
 /**
  * The current list of {@link VideoTrack} for a video.
  *
- * @see [Spec]{@link https://html.spec.whatwg.org/multipage/embedded-content.html#videotracklist}
+ * @see [Spec]{@link http://html.spec.whatwg.org/multipage/embedded-content.html#videotracklist}
  * @extends TrackList
  */
 
@@ -6050,7 +6050,7 @@ var VideoTrackList = function (_TrackList) {
 /**
  * The current list of {@link TextTrack} for a media file.
  *
- * @see [Spec]{@link https://html.spec.whatwg.org/multipage/embedded-content.html#texttracklist}
+ * @see [Spec]{@link http://html.spec.whatwg.org/multipage/embedded-content.html#texttracklist}
  * @extends TrackList
  */
 
@@ -6275,13 +6275,13 @@ var HtmlTrackElementList = function () {
  * @property {boolean} pauseOnExit
  *           Pause when the end time is reached if true.
  *
- * @see [Spec]{@link https://html.spec.whatwg.org/multipage/embedded-content.html#texttrackcue}
+ * @see [Spec]{@link http://html.spec.whatwg.org/multipage/embedded-content.html#texttrackcue}
  */
 
 /**
  * A List of TextTrackCues.
  *
- * @see [Spec]{@link https://html.spec.whatwg.org/multipage/embedded-content.html#texttrackcuelist}
+ * @see [Spec]{@link http://html.spec.whatwg.org/multipage/embedded-content.html#texttrackcuelist}
  */
 
 var TextTrackCueList = function () {
@@ -6400,7 +6400,7 @@ var TextTrackCueList = function () {
 /**
  * All possible `VideoTrackKind`s
  *
- * @see https://html.spec.whatwg.org/multipage/embedded-content.html#dom-videotrack-kind
+ * @see http://html.spec.whatwg.org/multipage/embedded-content.html#dom-videotrack-kind
  * @typedef VideoTrack~Kind
  * @enum
  */
@@ -6416,7 +6416,7 @@ var VideoTrackKind = {
 /**
  * All possible `AudioTrackKind`s
  *
- * @see https://html.spec.whatwg.org/multipage/embedded-content.html#dom-audiotrack-kind
+ * @see http://html.spec.whatwg.org/multipage/embedded-content.html#dom-audiotrack-kind
  * @typedef AudioTrack~Kind
  * @enum
  */
@@ -6432,7 +6432,7 @@ var AudioTrackKind = {
 /**
  * All possible `TextTrackKind`s
  *
- * @see https://html.spec.whatwg.org/multipage/embedded-content.html#dom-texttrack-kind
+ * @see http://html.spec.whatwg.org/multipage/embedded-content.html#dom-texttrack-kind
  * @typedef TextTrack~Kind
  * @enum
  */
@@ -6447,7 +6447,7 @@ var TextTrackKind = {
 /**
  * All possible `TextTrackMode`s
  *
- * @see https://html.spec.whatwg.org/multipage/embedded-content.html#texttrackmode
+ * @see http://html.spec.whatwg.org/multipage/embedded-content.html#texttrackmode
  * @typedef TextTrack~Mode
  * @enum
  */
@@ -6466,7 +6466,7 @@ var TextTrackMode = {
  *
  * > Note: This class should not be used directly
  *
- * @see {@link https://html.spec.whatwg.org/multipage/embedded-content.html}
+ * @see {@link http://html.spec.whatwg.org/multipage/embedded-content.html}
  * @extends EventTarget
  * @abstract
  */
@@ -6652,7 +6652,7 @@ var parseUrl = function parseUrl(url) {
     details.host = details.host.replace(/:80$/, '');
   }
 
-  if (details.protocol === 'https:') {
+  if (details.protocol === 'http:') {
     details.host = details.host.replace(/:443$/, '');
   }
 
@@ -6677,7 +6677,7 @@ var parseUrl = function parseUrl(url) {
  */
 var getAbsoluteURL = function getAbsoluteURL(url) {
   // Check if absolute URL
-  if (!url.match(/^https?:\/\//)) {
+  if (!url.match(/^http?:\/\//)) {
     // Convert to absolute URL. Flash hosted off-site needs an absolute URL.
     var div = document.createElement('div');
 
@@ -6842,7 +6842,7 @@ var loadTrack = function loadTrack(src, track) {
 /**
  * A representation of a single `TextTrack`.
  *
- * @see [Spec]{@link https://html.spec.whatwg.org/multipage/embedded-content.html#texttrack}
+ * @see [Spec]{@link http://html.spec.whatwg.org/multipage/embedded-content.html#texttrack}
  * @extends Track
  */
 
@@ -7150,7 +7150,7 @@ TextTrack.prototype.allowedEvents_ = {
  * A representation of a single `AudioTrack`. If it is part of an {@link AudioTrackList}
  * only one `AudioTrack` in the list will be enabled at a time.
  *
- * @see [Spec]{@link https://html.spec.whatwg.org/multipage/embedded-content.html#audiotrack}
+ * @see [Spec]{@link http://html.spec.whatwg.org/multipage/embedded-content.html#audiotrack}
  * @extends Track
  */
 
@@ -7251,7 +7251,7 @@ var AudioTrack = function (_Track) {
 /**
  * A representation of a single `VideoTrack`.
  *
- * @see [Spec]{@link https://html.spec.whatwg.org/multipage/embedded-content.html#videotrack}
+ * @see [Spec]{@link http://html.spec.whatwg.org/multipage/embedded-content.html#videotrack}
  * @extends Track
  */
 
@@ -7366,7 +7366,7 @@ var ERROR = 3;
 /**
  * A single track represented in the DOM.
  *
- * @see [Spec]{@link https://html.spec.whatwg.org/multipage/embedded-content.html#htmltrackelement}
+ * @see [Spec]{@link http://html.spec.whatwg.org/multipage/embedded-content.html#htmltrackelement}
  * @extends EventTarget
  */
 
@@ -8119,7 +8119,7 @@ var Tech = function (_Component) {
       // passed in
       var script = document.createElement('script');
 
-      script.src = this.options_['vtt.js'] || 'https://vjs.zencdn.net/vttjs/0.12.4/vtt.min.js';
+      script.src = this.options_['vtt.js'] || 'http://vjs.zencdn.net/vttjs/0.12.4/vtt.min.js';
       script.onload = function () {
         /**
          * Fired when vtt.js is loaded.
@@ -8338,7 +8338,7 @@ var Tech = function (_Component) {
    * Gets available media playback quality metrics as specified by the W3C's Media
    * Playback Quality API.
    *
-   * @see [Spec]{@link https://wicg.github.io/media-playback-quality}
+   * @see [Spec]{@link http://wicg.github.io/media-playback-quality}
    *
    * @return {Object}
    *         An object with supported media playback quality metrics
@@ -8390,7 +8390,7 @@ var Tech = function (_Component) {
    * @return {string}
    *         'probably', 'maybe', or empty string
    *
-   * @see [Spec]{@link https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/canPlayType}
+   * @see [Spec]{@link http://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/canPlayType}
    *
    * @abstract
    */
@@ -16594,7 +16594,7 @@ var Html5 = function (_Tech) {
    * Gets available media playback quality metrics as specified by the W3C's Media
    * Playback Quality API.
    *
-   * @see [Spec]{@link https://wicg.github.io/media-playback-quality}
+   * @see [Spec]{@link http://wicg.github.io/media-playback-quality}
    *
    * @return {Object}
    *         An object with supported media playback quality metrics
@@ -16716,7 +16716,7 @@ Html5.canControlVolume = function () {
  */
 Html5.canControlPlaybackRate = function () {
   // Playback rate API is implemented in Android Chrome, but doesn't do anything
-  // https://github.com/videojs/video.js/issues/3180
+  // http://github.com/videojs/video.js/issues/3180
   if (IS_ANDROID && IS_CHROME && CHROME_VERSION < 58) {
     return false;
   }
@@ -16965,7 +16965,7 @@ Html5.resetMediaElement = function (el) {
  *         - True if the value of `volume` should be ignored and the audio set to silent.
  *         - False if the value of `volume` should be used.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-muted}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-muted}
  */
 'muted',
 
@@ -16981,7 +16981,7 @@ Html5.resetMediaElement = function (el) {
  *         - True indicates that the media should start muted.
  *         - False indicates that the media should not start muted
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-defaultmuted}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-defaultmuted}
  */
 'defaultMuted',
 
@@ -16995,7 +16995,7 @@ Html5.resetMediaElement = function (el) {
  *         - True indicates that the media should start as soon as the page loads.
  *         - False indicates that the media should not start as soon as the page loads.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#attr-media-autoplay}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#attr-media-autoplay}
  */
 'autoplay',
 
@@ -17009,7 +17009,7 @@ Html5.resetMediaElement = function (el) {
  *         - True indicates that native controls should be showing.
  *         - False indicates that native controls should be hidden.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#attr-media-controls}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#attr-media-controls}
  */
 'controls',
 
@@ -17026,7 +17026,7 @@ Html5.resetMediaElement = function (el) {
  *         - False indicates that playback should not loop back to the start when the
  *           end of the media is reached.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#attr-media-loop}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#attr-media-loop}
  */
 'loop',
 
@@ -17041,7 +17041,7 @@ Html5.resetMediaElement = function (el) {
  *         - True indicates that the media should play inline.
  *         - False indicates that the media should not play inline.
  *
- * @see [Spec]{@link https://html.spec.whatwg.org/#attr-video-playsinline}
+ * @see [Spec]{@link http://html.spec.whatwg.org/#attr-video-playsinline}
  */
 'playsinline'].forEach(function (prop) {
   Html5.prototype[prop] = function () {
@@ -17063,7 +17063,7 @@ Html5.resetMediaElement = function (el) {
  *        - True if the audio should be set to silent
  *        - False otherwise
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-muted}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-muted}
  */
 'muted',
 
@@ -17076,7 +17076,7 @@ Html5.resetMediaElement = function (el) {
  *        - True if the audio should be set to silent
  *        - False otherwise
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-defaultmuted}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-defaultmuted}
  */
 'defaultMuted',
 
@@ -17089,7 +17089,7 @@ Html5.resetMediaElement = function (el) {
  *         - True indicates that the media should start as soon as the page loads.
  *         - False indicates that the media should not start as soon as the page loads.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#attr-media-autoplay}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#attr-media-autoplay}
  */
 'autoplay',
 
@@ -17105,7 +17105,7 @@ Html5.resetMediaElement = function (el) {
  *         - False indicates that playback should not loop back to the start when the
  *           end of the media is reached.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#attr-media-loop}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#attr-media-loop}
  */
 'loop',
 
@@ -17119,7 +17119,7 @@ Html5.resetMediaElement = function (el) {
  *         - True indicates that the media should play inline.
  *         - False indicates that the media should not play inline.
  *
- * @see [Spec]{@link https://html.spec.whatwg.org/#attr-video-playsinline}
+ * @see [Spec]{@link http://html.spec.whatwg.org/#attr-video-playsinline}
  */
 'playsinline'].forEach(function (prop) {
   Html5.prototype['set' + toTitleCase(prop)] = function (v) {
@@ -17147,7 +17147,7 @@ Html5.resetMediaElement = function (el) {
  * @return {boolean}
  *         The value of `paused` from the media element.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-paused}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-paused}
  */
 'paused',
 
@@ -17159,7 +17159,7 @@ Html5.resetMediaElement = function (el) {
  * @return {number}
  *         The value of `currentTime` from the media element.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-currenttime}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-currenttime}
  */
 'currentTime',
 
@@ -17172,7 +17172,7 @@ Html5.resetMediaElement = function (el) {
  * @return {TimeRange}
  *         The value of `buffered` from the media element.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-buffered}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-buffered}
  */
 'buffered',
 
@@ -17185,7 +17185,7 @@ Html5.resetMediaElement = function (el) {
  * @return {number}
  *         The value of `volume` from the media element. Value will be between 0-1.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-a-volume}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-a-volume}
  */
 'volume',
 
@@ -17198,7 +17198,7 @@ Html5.resetMediaElement = function (el) {
  *         The value of `poster` from the media element. Value will be a url to an
  *         image.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#attr-video-poster}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#attr-video-poster}
  */
 'poster',
 
@@ -17217,7 +17217,7 @@ Html5.resetMediaElement = function (el) {
  *         The value of `preload` from the media element. Will be 'none', 'metadata',
  *         or 'auto'.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#attr-media-preload}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#attr-media-preload}
  */
 'preload',
 
@@ -17231,7 +17231,7 @@ Html5.resetMediaElement = function (el) {
  *         The value of `error` from the media element. Will be `MediaError` if there
  *         is a current error and null otherwise.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-error}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-error}
  */
 'error',
 
@@ -17245,7 +17245,7 @@ Html5.resetMediaElement = function (el) {
  *         - True indicates that the media is currently seeking to a new position.
  *         - Flase indicates that the media is not seeking to a new position at this time.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-seeking}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-seeking}
  */
 'seeking',
 
@@ -17258,7 +17258,7 @@ Html5.resetMediaElement = function (el) {
  *         The value of `seekable` from the media element. A `TimeRange` object
  *         indicating the current ranges of time that can be seeked to.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-seekable}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-seekable}
  */
 'seekable',
 
@@ -17272,7 +17272,7 @@ Html5.resetMediaElement = function (el) {
  *         - True indicates that the media has ended.
  *         - False indicates that the media has not ended.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-ended}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-ended}
  */
 'ended',
 
@@ -17287,7 +17287,7 @@ Html5.resetMediaElement = function (el) {
  *         The value of `playbackRate` from the media element. A number indicating
  *         the current playback speed of the media, where 1 is normal speed.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-playbackrate}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-playbackrate}
  */
 'playbackRate',
 
@@ -17305,7 +17305,7 @@ Html5.resetMediaElement = function (el) {
  *         The value of `defaultPlaybackRate` from the media element. A number indicating
  *         the current playback speed of the media, where 1 is normal speed.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-playbackrate}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-playbackrate}
  */
 'defaultPlaybackRate',
 
@@ -17318,7 +17318,7 @@ Html5.resetMediaElement = function (el) {
  *         The value of `played` from the media element. A `TimeRange` object indicating
  *         the ranges of time that have been played.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-played}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-played}
  */
 'played',
 
@@ -17335,7 +17335,7 @@ Html5.resetMediaElement = function (el) {
  *         The value of `networkState` from the media element. This will be a number
  *         from the list in the description.
  *
- * @see [Spec] {@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-networkstate}
+ * @see [Spec] {@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-networkstate}
  */
 'networkState',
 
@@ -17354,7 +17354,7 @@ Html5.resetMediaElement = function (el) {
  *         The value of `readyState` from the media element. This will be a number
  *         from the list in the description.
  *
- * @see [Spec] {@link https://www.w3.org/TR/html5/embedded-content-0.html#ready-states}
+ * @see [Spec] {@link http://www.w3.org/TR/html5/embedded-content-0.html#ready-states}
  */
 'readyState',
 
@@ -17367,7 +17367,7 @@ Html5.resetMediaElement = function (el) {
  *         The value of `videoWidth` from the video element. This will be a number
  *         in css pixels.
  *
- * @see [Spec] {@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-video-videowidth}
+ * @see [Spec] {@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-video-videowidth}
  */
 'videoWidth',
 
@@ -17380,7 +17380,7 @@ Html5.resetMediaElement = function (el) {
  *         The value of `videoHeight` from the video element. This will be a number
  *         in css pixels.
  *
- * @see [Spec] {@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-video-videowidth}
+ * @see [Spec] {@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-video-videowidth}
  */
 'videoHeight'].forEach(function (prop) {
   Html5.prototype[prop] = function () {
@@ -17402,7 +17402,7 @@ Html5.resetMediaElement = function (el) {
  * @param {number} percentAsDecimal
  *        The volume percent as a decimal. Valid range is from 0-1.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-a-volume}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-a-volume}
  */
 'volume',
 
@@ -17414,7 +17414,7 @@ Html5.resetMediaElement = function (el) {
  * @param {Tech~SourceObject} src
  *        The source object to set as the current source.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-src}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-src}
  */
 'src',
 
@@ -17427,7 +17427,7 @@ Html5.resetMediaElement = function (el) {
  *        The url to an image that should be used as the `poster` for the media
  *        element.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#attr-media-poster}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#attr-media-poster}
  */
 'poster',
 
@@ -17446,7 +17446,7 @@ Html5.resetMediaElement = function (el) {
  *         The value of `preload` to set on the media element. Must be 'none', 'metadata',
  *         or 'auto'.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#attr-media-preload}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#attr-media-preload}
  */
 'preload',
 
@@ -17461,7 +17461,7 @@ Html5.resetMediaElement = function (el) {
  *         The value of `playbackRate` from the media element. A number indicating
  *         the current playback speed of the media, where 1 is normal speed.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-playbackrate}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-playbackrate}
  */
 'playbackRate',
 
@@ -17479,7 +17479,7 @@ Html5.resetMediaElement = function (el) {
  *         The value of `defaultPlaybackRate` from the media element. A number indicating
  *         the current playback speed of the media, where 1 is normal speed.
  *
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-defaultplaybackrate}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-defaultplaybackrate}
  */
 'defaultPlaybackRate'].forEach(function (prop) {
   Html5.prototype['set' + toTitleCase(prop)] = function (v) {
@@ -17496,7 +17496,7 @@ Html5.resetMediaElement = function (el) {
  * media elements `pause` function.
  *
  * @method Html5#pause
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-pause}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-pause}
  */
 'pause',
 
@@ -17505,7 +17505,7 @@ Html5.resetMediaElement = function (el) {
  * media element `load` function.
  *
  * @method Html5#load
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-load}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-load}
  */
 'load',
 
@@ -17514,7 +17514,7 @@ Html5.resetMediaElement = function (el) {
  * media element `play` function.
  *
  * @method Html5#play
- * @see [Spec]{@link https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-play}
+ * @see [Spec]{@link http://www.w3.org/TR/html5/embedded-content-0.html#dom-media-play}
  */
 'play'].forEach(function (prop) {
   Html5.prototype[prop] = function () {
@@ -17546,7 +17546,7 @@ Html5.nativeSourceHandler = {};
  */
 Html5.nativeSourceHandler.canPlayType = function (type) {
   // IE9 on Windows 7 without MediaPlayer throws an error here
-  // https://github.com/videojs/video.js/issues/519
+  // http://github.com/videojs/video.js/issues/519
   try {
     return Html5.TEST_VID.canPlayType(type);
   } catch (e) {
@@ -17608,7 +17608,7 @@ Html5.registerSourceHandler(Html5.nativeSourceHandler);
 
 Tech.registerTech('Html5', Html5);
 
-var _templateObject$1 = taggedTemplateLiteralLoose(['\n        Using the tech directly can be dangerous. I hope you know what you\'re doing.\n        See https://github.com/videojs/video.js/issues/2617 for more info.\n      '], ['\n        Using the tech directly can be dangerous. I hope you know what you\'re doing.\n        See https://github.com/videojs/video.js/issues/2617 for more info.\n      ']);
+var _templateObject$1 = taggedTemplateLiteralLoose(['\n        Using the tech directly can be dangerous. I hope you know what you\'re doing.\n        See http://github.com/videojs/video.js/issues/2617 for more info.\n      '], ['\n        Using the tech directly can be dangerous. I hope you know what you\'re doing.\n        See http://github.com/videojs/video.js/issues/2617 for more info.\n      ']);
 
 /**
  * @file player.js
@@ -18746,7 +18746,7 @@ var Player = function (_Component) {
   /**
    * Fired whenever the media begins or resumes playback
    *
-   * @see [Spec]{@link https://html.spec.whatwg.org/multipage/embedded-content.html#dom-media-play}
+   * @see [Spec]{@link http://html.spec.whatwg.org/multipage/embedded-content.html#dom-media-play}
    * @fires Player#play
    * @listens Tech#play
    * @private
@@ -19825,7 +19825,7 @@ var Player = function (_Component) {
   /**
    * Check whether the player can play a given mimetype
    *
-   * @see https://www.w3.org/TR/2011/WD-html5-20110113/video.html#dom-navigator-canplaytype
+   * @see http://www.w3.org/TR/2011/WD-html5-20110113/video.html#dom-navigator-canplaytype
    *
    * @param {string} type
    *        The mimetype to check
@@ -20217,7 +20217,7 @@ var Player = function (_Component) {
    *         - the current value of playsinline
    *         - the player when setting
    *
-   * @see [Spec]{@link https://html.spec.whatwg.org/#attr-video-playsinline}
+   * @see [Spec]{@link http://html.spec.whatwg.org/#attr-video-playsinline}
    */
 
 
@@ -20526,7 +20526,7 @@ var Player = function (_Component) {
           // this happens in fullscreen when we really need to hide the cursor.
           //
           // When this gets resolved in ALL browsers it can be removed
-          // https://code.google.com/p/chromium/issues/detail?id=103041
+          // http://code.google.com/p/chromium/issues/detail?id=103041
           if (this.tech_) {
             this.tech_.one('mousemove', function (e) {
               e.stopPropagation();
@@ -20563,7 +20563,7 @@ var Player = function (_Component) {
 
     var handleMouseMove = function handleMouseMove(e) {
       // #1068 - Prevent mousemove spamming
-      // Chrome Bug: https://code.google.com/p/chromium/issues/detail?id=366970
+      // Chrome Bug: http://code.google.com/p/chromium/issues/detail?id=366970
       if (e.screenX !== lastMoveX || e.screenY !== lastMoveY) {
         lastMoveX = e.screenX;
         lastMoveY = e.screenY;
@@ -20641,7 +20641,7 @@ var Player = function (_Component) {
    * 1.0 represents normal speed and 0.5 would indicate half-speed
    * playback, for instance.
    *
-   * @see https://html.spec.whatwg.org/multipage/embedded-content.html#dom-media-playbackrate
+   * @see http://html.spec.whatwg.org/multipage/embedded-content.html#dom-media-playbackrate
    *
    * @param {number} [rate]
    *       New playback rate to set.
@@ -20669,7 +20669,7 @@ var Player = function (_Component) {
    * defaultPlaybackRate will only represent what the intial playbackRate of a video was, not
    * not the current playbackRate.
    *
-   * @see https://html.spec.whatwg.org/multipage/embedded-content.html#dom-media-defaultplaybackrate
+   * @see http://html.spec.whatwg.org/multipage/embedded-content.html#dom-media-defaultplaybackrate
    *
    * @param {number} [rate]
    *       New default playback rate to set.
@@ -20797,7 +20797,7 @@ var Player = function (_Component) {
    * Gets available media playback quality metrics as specified by the W3C's Media
    * Playback Quality API.
    *
-   * @see [Spec]{@link https://wicg.github.io/media-playback-quality}
+   * @see [Spec]{@link http://wicg.github.io/media-playback-quality}
    *
    * @return {Object|undefined}
    *         An object with supported media playback quality metrics or undefined if there
@@ -21016,7 +21016,7 @@ var Player = function (_Component) {
 
 /**
  * Get the {@link VideoTrackList}
- * @link https://html.spec.whatwg.org/multipage/embedded-content.html#videotracklist
+ * @link http://html.spec.whatwg.org/multipage/embedded-content.html#videotracklist
  *
  * @return {VideoTrackList}
  *         the current video track list
@@ -21026,7 +21026,7 @@ var Player = function (_Component) {
 
 /**
  * Get the {@link AudioTrackList}
- * @link https://html.spec.whatwg.org/multipage/embedded-content.html#audiotracklist
+ * @link http://html.spec.whatwg.org/multipage/embedded-content.html#audiotracklist
  *
  * @return {AudioTrackList}
  *         the current audio track list
@@ -21161,7 +21161,7 @@ Player.prototype.options_ = {
  *   The element's resource selection algorithm is active, but it has
  *   not yet found a resource to use.
  *
- * @see https://html.spec.whatwg.org/multipage/embedded-content.html#network-states
+ * @see http://html.spec.whatwg.org/multipage/embedded-content.html#network-states
  * @return {number} the current network activity state
  * @method Player#networkState
  */
@@ -21185,7 +21185,7 @@ Player.prototype.options_ = {
  *   The user agent estimates that enough data is available for
  *   playback to proceed uninterrupted.
  *
- * @see https://html.spec.whatwg.org/multipage/embedded-content.html#dom-media-readystate
+ * @see http://html.spec.whatwg.org/multipage/embedded-content.html#dom-media-readystate
  * @return {number} the current playback rendering state
  * @method Player#readyState
  */
@@ -22386,7 +22386,7 @@ videojs.trigger = trigger;
  * @return {XMLHttpRequest|XDomainRequest}
  *         The request object.
  *
- * @see https://github.com/Raynos/xhr
+ * @see http://github.com/Raynos/xhr
  */
 videojs.xhr = xhr;
 
@@ -22548,7 +22548,7 @@ videojs.VideoTrack = VideoTrack;
  * This is because in Firefox, if the player is loaded in an iframe with `display:none`,
  * then `getComputedStyle` returns `null`, so, we do a null-check to make sure
  * that the player doesn't break in these cases.
- * See https://bugzilla.mozilla.org/show_bug.cgi?id=548397 for more details.
+ * See http://bugzilla.mozilla.org/show_bug.cgi?id=548397 for more details.
  *
  * @borrows computed-style:computedStyle as videojs.computedStyle
  */

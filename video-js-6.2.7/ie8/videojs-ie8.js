@@ -15,9 +15,9 @@ if (typeof window.HTMLVideoElement === 'undefined') {
 }
 
 /*!
- * https://github.com/es-shims/es5-shim
+ * http://github.com/es-shims/es5-shim
  * @license es5-shim Copyright 2009-2015 by contributors, MIT License
- * see https://github.com/es-shims/es5-shim/blob/master/LICENSE
+ * see http://github.com/es-shims/es5-shim/blob/master/LICENSE
  */
 
 // vim: ts=4 sts=4 sw=4 expandtab
@@ -26,7 +26,7 @@ if (typeof window.HTMLVideoElement === 'undefined') {
 ;
 
 // UMD (Universal Module Definition)
-// see https://github.com/umdjs/umd/blob/master/templates/returnExports.js
+// see http://github.com/umdjs/umd/blob/master/templates/returnExports.js
 (function (root, factory) {
     'use strict';
 
@@ -80,9 +80,9 @@ var min = Math.min;
 var to_string = ObjectPrototype.toString;
 
 var hasToStringTag = typeof Symbol === 'function' && typeof Symbol.toStringTag === 'symbol';
-var isCallable; /* inlined from https://npmjs.com/is-callable */ var fnToStr = Function.prototype.toString, tryFunctionObject = function tryFunctionObject(value) { try { fnToStr.call(value); return true; } catch (e) { return false; } }, fnClass = '[object Function]', genClass = '[object GeneratorFunction]'; isCallable = function isCallable(value) { if (typeof value !== 'function') { return false; } if (hasToStringTag) { return tryFunctionObject(value); } var strClass = to_string.call(value); return strClass === fnClass || strClass === genClass; };
-var isRegex; /* inlined from https://npmjs.com/is-regex */ var regexExec = RegExp.prototype.exec, tryRegexExec = function tryRegexExec(value) { try { regexExec.call(value); return true; } catch (e) { return false; } }, regexClass = '[object RegExp]'; isRegex = function isRegex(value) { if (typeof value !== 'object') { return false; } return hasToStringTag ? tryRegexExec(value) : to_string.call(value) === regexClass; };
-var isString; /* inlined from https://npmjs.com/is-string */ var strValue = String.prototype.valueOf, tryStringObject = function tryStringObject(value) { try { strValue.call(value); return true; } catch (e) { return false; } }, stringClass = '[object String]'; isString = function isString(value) { if (typeof value === 'string') { return true; } if (typeof value !== 'object') { return false; } return hasToStringTag ? tryStringObject(value) : to_string.call(value) === stringClass; };
+var isCallable; /* inlined from http://npmjs.com/is-callable */ var fnToStr = Function.prototype.toString, tryFunctionObject = function tryFunctionObject(value) { try { fnToStr.call(value); return true; } catch (e) { return false; } }, fnClass = '[object Function]', genClass = '[object GeneratorFunction]'; isCallable = function isCallable(value) { if (typeof value !== 'function') { return false; } if (hasToStringTag) { return tryFunctionObject(value); } var strClass = to_string.call(value); return strClass === fnClass || strClass === genClass; };
+var isRegex; /* inlined from http://npmjs.com/is-regex */ var regexExec = RegExp.prototype.exec, tryRegexExec = function tryRegexExec(value) { try { regexExec.call(value); return true; } catch (e) { return false; } }, regexClass = '[object RegExp]'; isRegex = function isRegex(value) { if (typeof value !== 'object') { return false; } return hasToStringTag ? tryRegexExec(value) : to_string.call(value) === regexClass; };
+var isString; /* inlined from http://npmjs.com/is-string */ var strValue = String.prototype.valueOf, tryStringObject = function tryStringObject(value) { try { strValue.call(value); return true; } catch (e) { return false; } }, stringClass = '[object String]'; isString = function isString(value) { if (typeof value === 'string') { return true; } if (typeof value !== 'object') { return false; } return hasToStringTag ? tryStringObject(value) : to_string.call(value) === stringClass; };
 
 /* inlined from http://npmjs.com/define-properties */
 var supportsDescriptors = $Object.defineProperty && (function () {
@@ -129,7 +129,7 @@ var defineProperties = (function (has) {
 // ======
 //
 
-/* replaceable with https://npmjs.com/package/es-abstract /helpers/isPrimitive */
+/* replaceable with http://npmjs.com/package/es-abstract /helpers/isPrimitive */
 var isPrimitive = function isPrimitive(input) {
     var type = typeof input;
     return input === null || (type !== 'object' && type !== 'function');
@@ -141,7 +141,7 @@ var ES = {
     // ES5 9.4
     // http://es5.github.com/#x9.4
     // http://jsperf.com/to-integer
-    /* replaceable with https://npmjs.com/package/es-abstract ES5.ToInteger */
+    /* replaceable with http://npmjs.com/package/es-abstract ES5.ToInteger */
     ToInteger: function ToInteger(num) {
         var n = +num;
         if (isActualNaN(n)) {
@@ -152,7 +152,7 @@ var ES = {
         return n;
     },
 
-    /* replaceable with https://npmjs.com/package/es-abstract ES5.ToPrimitive */
+    /* replaceable with http://npmjs.com/package/es-abstract ES5.ToPrimitive */
     ToPrimitive: function ToPrimitive(input) {
         var val, valueOf, toStr;
         if (isPrimitive(input)) {
@@ -177,7 +177,7 @@ var ES = {
 
     // ES5 9.9
     // http://es5.github.com/#x9.9
-    /* replaceable with https://npmjs.com/package/es-abstract ES5.ToObject */
+    /* replaceable with http://npmjs.com/package/es-abstract ES5.ToObject */
     ToObject: function (o) {
         if (o == null) { // this matches both null and undefined
             throw new TypeError("can't convert " + o + ' to object');
@@ -185,7 +185,7 @@ var ES = {
         return $Object(o);
     },
 
-    /* replaceable with https://npmjs.com/package/es-abstract ES5.ToUint32 */
+    /* replaceable with http://npmjs.com/package/es-abstract ES5.ToUint32 */
     ToUint32: function ToUint32(x) {
         return x >>> 0;
     }
@@ -372,7 +372,7 @@ defineProperties(ArrayPrototype, {
 
 // ES5 15.4.3.2
 // http://es5.github.com/#x15.4.3.2
-// https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/isArray
+// http://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/isArray
 defineProperties($Array, { isArray: isArray });
 
 // The IsCallable() check in the Array functions
@@ -389,7 +389,7 @@ defineProperties($Array, { isArray: isArray });
 
 // ES5 15.4.4.18
 // http://es5.github.com/#x15.4.4.18
-// https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/array/forEach
+// http://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/array/forEach
 
 // Check failure of by-index access of string characters (IE < 9)
 // and failure of `0 in boxedString` (Rhino)
@@ -451,7 +451,7 @@ defineProperties(ArrayPrototype, {
 
 // ES5 15.4.4.19
 // http://es5.github.com/#x15.4.4.19
-// https://developer.mozilla.org/en/Core_JavaScript_1.5_Reference/Objects/Array/map
+// http://developer.mozilla.org/en/Core_JavaScript_1.5_Reference/Objects/Array/map
 defineProperties(ArrayPrototype, {
     map: function map(callbackfn/*, thisArg*/) {
         var object = ES.ToObject(this);
@@ -483,7 +483,7 @@ defineProperties(ArrayPrototype, {
 
 // ES5 15.4.4.20
 // http://es5.github.com/#x15.4.4.20
-// https://developer.mozilla.org/en/Core_JavaScript_1.5_Reference/Objects/Array/filter
+// http://developer.mozilla.org/en/Core_JavaScript_1.5_Reference/Objects/Array/filter
 defineProperties(ArrayPrototype, {
     filter: function filter(callbackfn/*, thisArg*/) {
         var object = ES.ToObject(this);
@@ -515,7 +515,7 @@ defineProperties(ArrayPrototype, {
 
 // ES5 15.4.4.16
 // http://es5.github.com/#x15.4.4.16
-// https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/every
+// http://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/every
 defineProperties(ArrayPrototype, {
     every: function every(callbackfn/*, thisArg*/) {
         var object = ES.ToObject(this);
@@ -542,7 +542,7 @@ defineProperties(ArrayPrototype, {
 
 // ES5 15.4.4.17
 // http://es5.github.com/#x15.4.4.17
-// https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/some
+// http://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/some
 defineProperties(ArrayPrototype, {
     some: function some(callbackfn/*, thisArg */) {
         var object = ES.ToObject(this);
@@ -569,7 +569,7 @@ defineProperties(ArrayPrototype, {
 
 // ES5 15.4.4.21
 // http://es5.github.com/#x15.4.4.21
-// https://developer.mozilla.org/en/Core_JavaScript_1.5_Reference/Objects/Array/reduce
+// http://developer.mozilla.org/en/Core_JavaScript_1.5_Reference/Objects/Array/reduce
 var reduceCoercesToObject = false;
 if (ArrayPrototype.reduce) {
     reduceCoercesToObject = typeof ArrayPrototype.reduce.call('es5', function (_, __, ___, list) { return list; }) === 'object';
@@ -620,7 +620,7 @@ defineProperties(ArrayPrototype, {
 
 // ES5 15.4.4.22
 // http://es5.github.com/#x15.4.4.22
-// https://developer.mozilla.org/en/Core_JavaScript_1.5_Reference/Objects/Array/reduceRight
+// http://developer.mozilla.org/en/Core_JavaScript_1.5_Reference/Objects/Array/reduceRight
 var reduceRightCoercesToObject = false;
 if (ArrayPrototype.reduceRight) {
     reduceRightCoercesToObject = typeof ArrayPrototype.reduceRight.call('es5', function (_, __, ___, list) { return list; }) === 'object';
@@ -675,7 +675,7 @@ defineProperties(ArrayPrototype, {
 
 // ES5 15.4.4.14
 // http://es5.github.com/#x15.4.4.14
-// https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/indexOf
+// http://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/indexOf
 var hasFirefox2IndexOfBug = ArrayPrototype.indexOf && [0, 1].indexOf(1, 2) !== -1;
 defineProperties(ArrayPrototype, {
     indexOf: function indexOf(searchElement/*, fromIndex */) {
@@ -704,7 +704,7 @@ defineProperties(ArrayPrototype, {
 
 // ES5 15.4.4.15
 // http://es5.github.com/#x15.4.4.15
-// https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/lastIndexOf
+// http://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/lastIndexOf
 var hasFirefox2LastIndexOfBug = ArrayPrototype.lastIndexOf && [0, 1].lastIndexOf(0, -3) !== -1;
 defineProperties(ArrayPrototype, {
     lastIndexOf: function lastIndexOf(searchElement/*, fromIndex */) {
@@ -769,18 +769,18 @@ defineProperties(ArrayPrototype, {
     }
 }, !spliceWorksWithEmptyObject);
 var spliceWorksWithLargeSparseArrays = (function () {
-    // Per https://github.com/es-shims/es5-shim/issues/295
+    // Per http://github.com/es-shims/es5-shim/issues/295
     // Safari 7/8 breaks with sparse arrays of size 1e5 or greater
     var arr = new $Array(1e5);
     // note: the index MUST be 8 or larger or the test will false pass
     arr[8] = 'x';
     arr.splice(1, 1);
     // note: this test must be defined *after* the indexOf shim
-    // per https://github.com/es-shims/es5-shim/issues/313
+    // per http://github.com/es-shims/es5-shim/issues/313
     return arr.indexOf('x') === 7;
 }());
 var spliceWorksWithSmallSparseArrays = (function () {
-    // Per https://github.com/es-shims/es5-shim/issues/295
+    // Per http://github.com/es-shims/es5-shim/issues/295
     // Opera 12.15 breaks on this, no idea why.
     var n = 256;
     var arr = [];
@@ -1018,7 +1018,7 @@ var dontEnums = [
 ];
 var dontEnumsLength = dontEnums.length;
 
-// taken directly from https://github.com/ljharb/is-arguments/blob/master/index.js
+// taken directly from http://github.com/ljharb/is-arguments/blob/master/index.js
 // can be replaced with require('is-arguments') if we ever use a build process instead
 var isStandardArguments = function isArguments(value) {
     return toStr(value) === '[object Arguments]';
@@ -1302,7 +1302,7 @@ defineProperties(Date.prototype, {
         var year = originalGetUTCFullYear(this);
 
         var month = originalGetUTCMonth(this);
-        // see https://github.com/es-shims/es5-shim/issues/111
+        // see http://github.com/es-shims/es5-shim/issues/111
         year += Math.floor(month / 12);
         month = (month % 12 + 12) % 12;
 
@@ -1513,7 +1513,7 @@ if (doesNotParseY2KNewYear || acceptsInvalidDates || !supportsExtendedYears) {
                     millisecond = Math.floor($Number(match[7] || 0) * 1000),
                     // When time zone is missed, local offset should be used
                     // (ES 5.1 bug)
-                    // see https://bugs.ecmascript.org/show_bug.cgi?id=112
+                    // see http://bugs.ecmascript.org/show_bug.cgi?id=112
                     isLocalTime = Boolean(match[4] && !match[8]),
                     signOffset = match[9] === '-' ? 1 : -1,
                     hourOffset = $Number(match[10] || 0),
@@ -1966,7 +1966,7 @@ if (parseInt(ws + '08') !== 8 || parseInt(ws + '0x16') !== 22) {
     }(parseInt));
 }
 
-// https://es5.github.io/#x15.1.2.3
+// http://es5.github.io/#x15.1.2.3
 if (1 / parseFloat('-0') !== -Infinity) {
     /* global parseFloat: true */
     parseFloat = (function (origParseFloat) {
@@ -2043,9 +2043,9 @@ if (String(/a/mig) !== '/a/gim') {
 }));
 
 /*!
- * https://github.com/es-shims/es5-shim
+ * http://github.com/es-shims/es5-shim
  * @license es5-shim Copyright 2009-2015 by contributors, MIT License
- * see https://github.com/es-shims/es5-shim/blob/master/LICENSE
+ * see http://github.com/es-shims/es5-shim/blob/master/LICENSE
  */
 
 // vim: ts=4 sts=4 sw=4 expandtab
@@ -2054,7 +2054,7 @@ if (String(/a/mig) !== '/a/gim') {
 ;
 
 // UMD (Universal Module Definition)
-// see https://github.com/umdjs/umd/blob/master/templates/returnExports.js
+// see http://github.com/umdjs/umd/blob/master/templates/returnExports.js
 (function (root, factory) {
     'use strict';
 
@@ -2097,7 +2097,7 @@ if (supportsAccessors) {
 // ES5 15.2.3.2
 // http://es5.github.com/#x15.2.3.2
 if (!Object.getPrototypeOf) {
-    // https://github.com/es-shims/es5-shim/issues#issue/2
+    // http://github.com/es-shims/es5-shim/issues#issue/2
     // http://ejohn.org/blog/objectgetprototypeof/
     // recommended by fschaefer on github
     //
@@ -2247,8 +2247,8 @@ if (!Object.create) {
 
     // Check for document.domain and active x support
     // No need to use active x approach when document.domain is not set
-    // see https://github.com/es-shims/es5-shim/issues/150
-    // variation of https://github.com/kitcambridge/es5-shim/commit/4f738ac066346
+    // see http://github.com/es-shims/es5-shim/issues/150
+    // variation of http://github.com/kitcambridge/es5-shim/commit/4f738ac066346
     /* global ActiveXObject */
     var shouldUseActiveX = function shouldUseActiveX() {
         // return early if document.domain not set
@@ -2264,8 +2264,8 @@ if (!Object.create) {
     };
 
     // This supports IE8 when document.domain is used
-    // see https://github.com/es-shims/es5-shim/issues/150
-    // variation of https://github.com/kitcambridge/es5-shim/commit/4f738ac066346
+    // see http://github.com/es-shims/es5-shim/issues/150
+    // variation of http://github.com/kitcambridge/es5-shim/commit/4f738ac066346
     var getEmptyViaActiveX = function getEmptyViaActiveX() {
         var empty;
         var xDoc;
@@ -2283,7 +2283,7 @@ if (!Object.create) {
 
     // The original implementation using an iframe
     // before the activex approach was added
-    // see https://github.com/es-shims/es5-shim/issues/150
+    // see http://github.com/es-shims/es5-shim/issues/150
     var getEmptyViaIFrame = function getEmptyViaIFrame() {
         var iframe = document.createElement('iframe');
         var parent = document.body || document.documentElement;
@@ -2315,7 +2315,7 @@ if (!Object.create) {
         // used as the prototype to create nullary objects.
         createEmpty = function () {
             // Determine which approach to use
-            // see https://github.com/es-shims/es5-shim/issues/150
+            // see http://github.com/es-shims/es5-shim/issues/150
             var empty = shouldUseActiveX() ? getEmptyViaActiveX() : getEmptyViaIFrame();
 
             delete empty.constructor;
@@ -2376,12 +2376,12 @@ if (!Object.create) {
 
 // Patch for WebKit and IE8 standard mode
 // Designed by hax <hax.github.com>
-// related issue: https://github.com/es-shims/es5-shim/issues#issue/5
+// related issue: http://github.com/es-shims/es5-shim/issues#issue/5
 // IE8 Reference:
 //     http://msdn.microsoft.com/en-us/library/dd282900.aspx
 //     http://msdn.microsoft.com/en-us/library/dd229916.aspx
 // WebKit Bugs:
-//     https://bugs.webkit.org/show_bug.cgi?id=36423
+//     http://bugs.webkit.org/show_bug.cgi?id=36423
 
 var doesDefinePropertyWork = function doesDefinePropertyWork(object) {
     try {

@@ -30,7 +30,7 @@ if ( Number.EPSILON === undefined ) {
 
 if ( Math.sign === undefined ) {
 
-	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign
+	// http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign
 
 	Math.sign = function ( x ) {
 
@@ -43,7 +43,7 @@ if ( Math.sign === undefined ) {
 if ( Function.prototype.name === undefined && Object.defineProperty !== undefined ) {
 
 	// Missing in IE9-11.
-	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name
+	// http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name
 
 	Object.defineProperty( Function.prototype, 'name', {
 
@@ -59,7 +59,7 @@ if ( Function.prototype.name === undefined && Object.defineProperty !== undefine
 
 if ( Object.assign === undefined ) {
 
-	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
+	// http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
 
 	Object.defineProperty( Object, 'assign', {
 
@@ -111,7 +111,7 @@ if ( Object.assign === undefined ) {
 
 }
 
-// https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent.button
+// http://developer.mozilla.org/en-US/docs/Web/API/MouseEvent.button
 
 THREE.MOUSE = { LEFT: 0, MIDDLE: 1, RIGHT: 2 };
 
@@ -6887,7 +6887,7 @@ THREE.Plane.prototype = {
  * @author bhouston / http://clara.io
  * @author WestLangley / http://github.com/WestLangley
  *
- * Ref: https://en.wikipedia.org/wiki/Spherical_coordinate_system
+ * Ref: http://en.wikipedia.org/wiki/Spherical_coordinate_system
  *
  * The poles (phi) are at the positive and negative y axis.
  * The equator starts at positive z.
@@ -7017,7 +7017,7 @@ THREE.Math = {
 	},
 
 	// compute euclidian modulo of m % n
-	// https://en.wikipedia.org/wiki/Modulo_operation
+	// http://en.wikipedia.org/wiki/Modulo_operation
 
 	euclideanModulo: function ( n, m ) {
 
@@ -8175,7 +8175,7 @@ THREE.Clock.prototype = {
 // File:src/core/EventDispatcher.js
 
 /**
- * https://github.com/mrdoob/eventdispatcher.js/
+ * http://github.com/mrdoob/eventdispatcher.js/
  */
 
 THREE.EventDispatcher = function () {};
@@ -9631,7 +9631,7 @@ THREE.DynamicBufferAttribute = function ( array, itemSize ) {
 // File:src/core/InstancedBufferAttribute.js
 
 /**
- * @author benaadams / https://twitter.com/ben_a_adams
+ * @author benaadams / http://twitter.com/ben_a_adams
  */
 
 THREE.InstancedBufferAttribute = function ( array, itemSize, meshPerAttribute ) {
@@ -9658,7 +9658,7 @@ THREE.InstancedBufferAttribute.prototype.copy = function ( source ) {
 // File:src/core/InterleavedBuffer.js
 
 /**
- * @author benaadams / https://twitter.com/ben_a_adams
+ * @author benaadams / http://twitter.com/ben_a_adams
  */
 
 THREE.InterleavedBuffer = function ( array, stride ) {
@@ -9751,7 +9751,7 @@ THREE.InterleavedBuffer.prototype = {
 // File:src/core/InstancedInterleavedBuffer.js
 
 /**
- * @author benaadams / https://twitter.com/ben_a_adams
+ * @author benaadams / http://twitter.com/ben_a_adams
  */
 
 THREE.InstancedInterleavedBuffer = function ( array, stride, meshPerAttribute ) {
@@ -9778,7 +9778,7 @@ THREE.InstancedInterleavedBuffer.prototype.copy = function ( source ) {
 // File:src/core/InterleavedBufferAttribute.js
 
 /**
- * @author benaadams / https://twitter.com/ben_a_adams
+ * @author benaadams / http://twitter.com/ben_a_adams
  */
 
 THREE.InterleavedBufferAttribute = function ( interleavedBuffer, itemSize, offset ) {
@@ -12436,7 +12436,7 @@ THREE.BufferGeometry.MaxIndex = 65535;
 // File:src/core/InstancedBufferGeometry.js
 
 /**
- * @author benaadams / https://twitter.com/ben_a_adams
+ * @author benaadams / http://twitter.com/ben_a_adams
  */
 
 THREE.InstancedBufferGeometry = function () {
@@ -12716,7 +12716,7 @@ Object.assign( THREE.AnimationClip, {
 
 		var animationToMorphTargets = {};
 
-		// tested with https://regex101.com/ on trick sequences
+		// tested with http://regex101.com/ on trick sequences
 		// such flamingo_flyA_003, flamingo_run1_003, crdeath0059
 		var pattern = /^([\w-]*?)([\d]+)$/;
 
@@ -15865,7 +15865,7 @@ THREE.PropertyBinding.parseTrackName = function( trackName ) {
 	//    parentName/nodeName.property
 	//    parentName/parentName/nodeName.property[index]
 	//	  .bone[Armature.DEF_cog].position
-	// created and tested via https://regex101.com/#javascript
+	// created and tested via http://regex101.com/#javascript
 
 	var re = /^(([\w]+\/)*)([\w-\d]+)?(\.([\w]+)(\[([\w\d\[\]\_.:\- ]+)\])?)?(\.([\w.]+)(\[([\w\d\[\]\_. ]+)\])?)$/;
 	var matches = re.exec(trackName);
@@ -20083,7 +20083,7 @@ THREE.CubeTextureLoader.prototype = {
 // File:src/loaders/BinaryTextureLoader.js
 
 /**
- * @author Nikos M. / https://github.com/foo123/
+ * @author Nikos M. / http://github.com/foo123/
  *
  * Abstract Base class to load generic binary textures formats (rgbe, hdr, ...)
  */
@@ -20896,7 +20896,7 @@ THREE.MeshBasicMaterial.prototype.copy = function ( source ) {
 /**
  * @author mrdoob / http://mrdoob.com/
  * @author alteredq / http://alteredqualia.com/
- * @author bhouston / https://clara.io
+ * @author bhouston / http://clara.io
  * @author WestLangley / http://github.com/WestLangley
  *
  * parameters = {
@@ -21923,7 +21923,7 @@ THREE.SpriteMaterial.prototype.copy = function ( source ) {
 /**
  * @author mrdoob / http://mrdoob.com/
  * @author alteredq / http://alteredqualia.com/
- * @author szimek / https://github.com/szimek/
+ * @author szimek / http://github.com/szimek/
  */
 
 THREE.Texture = function ( image, mapping, wrapS, wrapT, magFilter, minFilter, format, type, anisotropy, encoding ) {
@@ -24755,7 +24755,7 @@ THREE.ShaderLib[ 'physical' ] = {
  * @author supereggbert / http://www.paulbrunt.co.uk/
  * @author mrdoob / http://mrdoob.com/
  * @author alteredq / http://alteredqualia.com/
- * @author szimek / https://github.com/szimek/
+ * @author szimek / http://github.com/szimek/
  * @author tschw
  */
 
@@ -28299,9 +28299,9 @@ THREE.WebGLRenderer = function ( parameters ) {
 // File:src/renderers/WebGLRenderTarget.js
 
 /**
- * @author szimek / https://github.com/szimek/
+ * @author szimek / http://github.com/szimek/
  * @author alteredq / http://alteredqualia.com/
- * @author Marius Kintel / https://github.com/kintel
+ * @author Marius Kintel / http://github.com/kintel
  */
 
 /*
@@ -36155,7 +36155,7 @@ THREE.SplineCurve3 = THREE.Curve.create(
 // File:src/extras/curves/CatmullRomCurve3.js
 
 /**
- * @author zz85 https://github.com/zz85
+ * @author zz85 http://github.com/zz85
  *
  * Centripetal CatmullRom Curve - which is useful for avoiding
  * cusps and self-intersections in non-uniform catmull rom curves.
@@ -36391,7 +36391,7 @@ THREE.CubeGeometry = THREE.BoxGeometry;
 // File:src/extras/geometries/BoxBufferGeometry.js
 
 /**
- * @author Mugen87 / https://github.com/Mugen87
+ * @author Mugen87 / http://github.com/Mugen87
  */
 
 THREE.BoxBufferGeometry = function ( width, height, depth, widthSegments, heightSegments, depthSegments ) {
@@ -36601,7 +36601,7 @@ THREE.CircleGeometry.prototype.constructor = THREE.CircleGeometry;
 // File:src/extras/geometries/CircleBufferGeometry.js
 
 /**
- * @author benaadams / https://twitter.com/ben_a_adams
+ * @author benaadams / http://twitter.com/ben_a_adams
  */
 
 THREE.CircleBufferGeometry = function ( radius, segments, thetaStart, thetaLength ) {
@@ -36671,7 +36671,7 @@ THREE.CircleBufferGeometry.prototype.constructor = THREE.CircleBufferGeometry;
 // File:src/extras/geometries/CylinderBufferGeometry.js
 
 /**
- * @author Mugen87 / https://github.com/Mugen87
+ * @author Mugen87 / http://github.com/Mugen87
  */
 
 THREE.CylinderBufferGeometry = function( radiusTop, radiusBottom, height, radialSegments, heightSegments, openEnded, thetaStart, thetaLength ) {
@@ -37956,7 +37956,7 @@ THREE.ShapeGeometry.prototype.addShape = function ( shape, options ) {
 // File:src/extras/geometries/LatheBufferGeometry.js
 
 /**
- * @author Mugen87 / https://github.com/Mugen87
+ * @author Mugen87 / http://github.com/Mugen87
  */
 
  // points - to create a closed torus, one must use a set of points
@@ -38116,7 +38116,7 @@ THREE.LatheBufferGeometry.prototype.constructor = THREE.LatheBufferGeometry;
 
 /**
  * @author astrodud / http://astrodud.isgreat.org/
- * @author zz85 / https://github.com/zz85
+ * @author zz85 / http://github.com/zz85
  * @author bhouston / http://clara.io
  */
 
@@ -38277,7 +38277,7 @@ THREE.PlaneBufferGeometry.prototype.constructor = THREE.PlaneBufferGeometry;
 // File:src/extras/geometries/RingBufferGeometry.js
 
 /**
- * @author Mugen87 / https://github.com/Mugen87
+ * @author Mugen87 / http://github.com/Mugen87
  */
 
 THREE.RingBufferGeometry = function ( innerRadius, outerRadius, thetaSegments, phiSegments, thetaStart, thetaLength ) {
@@ -38457,7 +38457,7 @@ THREE.SphereGeometry.prototype.constructor = THREE.SphereGeometry;
 // File:src/extras/geometries/SphereBufferGeometry.js
 
 /**
- * @author benaadams / https://twitter.com/ben_a_adams
+ * @author benaadams / http://twitter.com/ben_a_adams
  * based on THREE.SphereGeometry
  */
 
@@ -38616,7 +38616,7 @@ THREE.TextGeometry.prototype.constructor = THREE.TextGeometry;
 // File:src/extras/geometries/TorusBufferGeometry.js
 
 /**
- * @author Mugen87 / https://github.com/Mugen87
+ * @author Mugen87 / http://github.com/Mugen87
  */
 
 THREE.TorusBufferGeometry = function ( radius, tube, radialSegments, tubularSegments, arc ) {
@@ -38774,7 +38774,7 @@ THREE.TorusGeometry.prototype.constructor = THREE.TorusGeometry;
 // File:src/extras/geometries/TorusKnotBufferGeometry.js
 
 /**
- * @author Mugen87 / https://github.com/Mugen87
+ * @author Mugen87 / http://github.com/Mugen87
  *
  * see: http://www.blackpawn.com/texts/pqtorus/
  */
@@ -38972,10 +38972,10 @@ THREE.TorusKnotGeometry.prototype.constructor = THREE.TorusKnotGeometry;
 // File:src/extras/geometries/TubeGeometry.js
 
 /**
- * @author WestLangley / https://github.com/WestLangley
- * @author zz85 / https://github.com/zz85
- * @author miningold / https://github.com/miningold
- * @author jonobr1 / https://github.com/jonobr1
+ * @author WestLangley / http://github.com/WestLangley
+ * @author zz85 / http://github.com/zz85
+ * @author miningold / http://github.com/miningold
+ * @author jonobr1 / http://github.com/jonobr1
  *
  * Modified from the TorusKnotGeometry by @oosmoxiecode
  *
@@ -39280,8 +39280,8 @@ THREE.TubeGeometry.FrenetFrames = function ( path, segments, closed ) {
 // File:src/extras/geometries/PolyhedronGeometry.js
 
 /**
- * @author clockworkgeek / https://github.com/clockworkgeek
- * @author timothypratley / https://github.com/timothypratley
+ * @author clockworkgeek / http://github.com/clockworkgeek
+ * @author timothypratley / http://github.com/timothypratley
  * @author WestLangley / http://github.com/WestLangley
 */
 
@@ -39524,7 +39524,7 @@ THREE.PolyhedronGeometry.prototype.constructor = THREE.PolyhedronGeometry;
 // File:src/extras/geometries/DodecahedronGeometry.js
 
 /**
- * @author Abe Pazos / https://hamoid.com
+ * @author Abe Pazos / http://hamoid.com
  */
 
 THREE.DodecahedronGeometry = function ( radius, detail ) {
@@ -39585,7 +39585,7 @@ THREE.DodecahedronGeometry.prototype.constructor = THREE.DodecahedronGeometry;
 // File:src/extras/geometries/IcosahedronGeometry.js
 
 /**
- * @author timothypratley / https://github.com/timothypratley
+ * @author timothypratley / http://github.com/timothypratley
  */
 
 THREE.IcosahedronGeometry = function ( radius, detail ) {
@@ -39622,7 +39622,7 @@ THREE.IcosahedronGeometry.prototype.constructor = THREE.IcosahedronGeometry;
 // File:src/extras/geometries/OctahedronGeometry.js
 
 /**
- * @author timothypratley / https://github.com/timothypratley
+ * @author timothypratley / http://github.com/timothypratley
  */
 
 THREE.OctahedronGeometry = function ( radius, detail ) {
@@ -39652,7 +39652,7 @@ THREE.OctahedronGeometry.prototype.constructor = THREE.OctahedronGeometry;
 // File:src/extras/geometries/TetrahedronGeometry.js
 
 /**
- * @author timothypratley / https://github.com/timothypratley
+ * @author timothypratley / http://github.com/timothypratley
  */
 
 THREE.TetrahedronGeometry = function ( radius, detail ) {
@@ -39682,7 +39682,7 @@ THREE.TetrahedronGeometry.prototype.constructor = THREE.TetrahedronGeometry;
 // File:src/extras/geometries/ParametricGeometry.js
 
 /**
- * @author zz85 / https://github.com/zz85
+ * @author zz85 / http://github.com/zz85
  * Parametric Surfaces Geometry
  * based on the brilliant article by @prideout http://prideout.net/blog/?p=44
  *

@@ -83,7 +83,7 @@
       }
       // Change player source and wait for loadeddata event, then play video
       // loadedmetadata doesn't work right now for flash.
-      // Probably because of https://github.com/videojs/video-js-swf/issues/124
+      // Probably because of http://github.com/videojs/video-js-swf/issues/124
       // If player preload is 'none' and then loadeddata not fired. So, we need timeupdate event for seek handle (timeupdate doesn't work properly with flash)
       var handleSeekEvent = 'loadeddata';
       if(this.player_.techName_ !== 'Youtube' && this.player_.preload() === 'none' && this.player_.techName_ !== 'Flash') {

@@ -125,7 +125,7 @@ THE SOFTWARE. */
       };
 
       // Let the user set any YouTube parameter
-      // https://developers.google.com/youtube/player_parameters?playerVersion=HTML5#Parameters
+      // http://developers.google.com/youtube/player_parameters?playerVersion=HTML5#Parameters
       // To use YouTube controls, you must use ytControls instead
       // To use the loop or autoplay, use the video.js settings
 
@@ -406,7 +406,7 @@ THE SOFTWARE. */
       if (!this.options_.poster) {
         if (this.url.videoId) {
           // Set the low resolution first
-          this.poster_ = 'https://img.youtube.com/vi/' + this.url.videoId + '/0.jpg';
+          this.poster_ = 'http://img.youtube.com/vi/' + this.url.videoId + '/0.jpg';
           this.trigger('posterchange');
 
           // Check if their is a high res
@@ -624,7 +624,7 @@ THE SOFTWARE. */
 
     // Tries to get the highest resolution thumbnail available for the video
     checkHighResPoster: function(){
-      var uri = 'https://img.youtube.com/vi/' + this.url.videoId + '/maxresdefault.jpg';
+      var uri = 'http://img.youtube.com/vi/' + this.url.videoId + '/maxresdefault.jpg';
 
       try {
         var image = new Image();
@@ -736,7 +736,7 @@ THE SOFTWARE. */
   Youtube.apiReadyQueue = [];
 
   if (typeof document !== 'undefined'){
-    loadScript('https://www.youtube.com/iframe_api', apiLoaded);
+    loadScript('http://www.youtube.com/iframe_api', apiLoaded);
     injectCss();
   }
 
