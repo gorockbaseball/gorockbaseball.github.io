@@ -800,22 +800,22 @@ a:hover {
 
 ::selection {
   background-color: #d70014;
-  color: black;
+  color: white;
 }
 
 ::-moz-selection {
   background-color: #d70014;
-  color: black;
+  color: white;
 }
 
 ::-o-selection {
   background-color: #d70014;
-  color: black;
+  color: white;
 }
 
 ::-webkit-selection {
   background-color: #d70014;
-  color: black;
+  color: white;
 }
 
 .accordion {
