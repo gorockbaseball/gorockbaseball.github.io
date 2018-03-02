@@ -433,6 +433,10 @@ header {
   text-align: right;
 }
 
+.player-number::before {
+  content: '#';
+}
+
 #card-expand {
   width: 25px;
   height: 25px;
